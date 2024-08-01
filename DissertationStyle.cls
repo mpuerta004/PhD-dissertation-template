@@ -98,6 +98,37 @@
 \usepackage{multirow}
 
 \usepackage{lettrine}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[numbers]{natbib}
+% \usepackage[numbers]{natbib}
+%\usepackage[authoryear]{natbib}
+% \usepackage{lineno} % para numerar las lineas.
+% \usepackage{lipsum}
+
+\usepackage{booktabs}
+\usepackage{rotating}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{supertabular} % Para tablas largas
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{rotating}
+\usepackage{multicol}
+\usepackage{longtable}
+\usepackage{verbatim} % comentarios
+\usepackage{stfloats}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{fancyvrb}
+\usepackage{mathtools}
+\usepackage{hyperref}
+\usepackage{framed}
+\usepackage{wrapfig}
+\usepackage{amssymb}
+\usepackage{longtable} % Para tablas largas
+\usepackage{afterpage} % Para la función \afterpage
 
 % Introduce slash \
 %\usepackage{slashbox}
@@ -357,12 +388,13 @@
 
 \makeatletter
 
-\def\author{Jane Doe}
+\def\author{Maite Puerta Beldarrain}
 
-\def\advisor{Dr. Joe Bloggs}
-\def\coadvisor{Dr. Sally Citizen}
+\def\advisor{Dr. Oihane Gómez-Carmona}
+\def\coadvisor{Dr. Diego López-de-Ipiña}
 
-\def\phdprogram{Rather lenghty name of your PhD program}
+\def\phdprogram{Engineering for the Information
+Society and Sustainable Development}
 \def\phdday{ Day}
 \def\phdmonth{Month}
 \def\phdyear{Year}
@@ -467,7 +499,7 @@
             \centering
             \includegraphics[width=0.5\textwidth]{0_frontmatter/img/university_shield.png}
             \begin{center}
-                \textsc{Monsters University}\\
+                \textsc{University of Deusto}\\
             \end{center}
         \end{figure}
 
@@ -480,12 +512,13 @@
 
             \vspace{25pt}
 
-            within the doctoral program \textsc{\phdprogram}\\
+            Within the doctoral program \textsc{\phdprogram}\\
 
             \vspace{75pt}
 
             \begin{tabularx}{\textwidth}{CCC}
                 Candidate & Advisor & Co-advisor\\
+                \textsc{\author} & \textsc{\advisor} & \textsc{\coadvisor}\\
             \end{tabularx}\\
 
             \vspace{55pt}
@@ -652,7 +685,7 @@
         {0pt}{*4}{0.5ex}
 }
 
-%   Declaration statement of the originality of the performed work
+% Declaration statement of the originality of the performed work
 % ----------------------------------------------------------------------------------------------------
 
 \newenvironment{declaration} {
@@ -762,8 +795,8 @@
 %   Page numbers
 % ----------------------------------------------------------------------------------------------------
 
-%   The romanpages environment set the page numbering to lowercase roman 'one' for the contents and
-%   figures lists. It also resets the numbering for the rest of the dissertation in arabic (starting at 1)
+% The romanpages environment set the page numbering to lowercase roman 'one' for the contents and
+% figures lists. It also resets the numbering for the rest of the dissertation in arabic (starting at 1)
 % ----------------------------------------------------------------------------------------------------
 
 \newenvironment{romanpages}
